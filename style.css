@@ -1,0 +1,134 @@
+:root{
+    --shadow: 0 2px 2px rgba(0 0 0 0.5);
+}
+
+body{
+    min-height: 4000px;
+}
+
+.hero{
+    font-size: 1.2 rem;
+    min-height: 100vh;
+    background: url(./assets/wd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: var(--shadow);
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.hero h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+}
+
+.hero a{
+    font-size: 0.9rem;
+    background-color:white ;
+    color: rgb(255, 136, 156);
+}
+
+.hero a:hover{
+    font-size: 0.9rem;
+   
+    background-color: rgb(255, 136, 156);
+    color: white;
+}
+
+/* NAVBAR */
+
+.navBar{
+    background-color: rgba(255, 255, 255, 0.1) !important ;
+    backdrop-filter: blur(1.5px);
+}
+
+.navBar .offcanvas{
+    height: 100vh;
+}
+
+.navBar .navbar-brand{
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navBar .offcanvas-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+}
+
+.navBar .nav-link{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar .nav-link:hover{
+    color: rgb(255, 136, 156);
+    transition: all 0.2s ease-in-out;
+}
+.navbar .nav-link:active{
+    color: rgb(255, 136, 156);
+}
+
+.home{
+    background: url(./assets/newbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -4.6rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.home h2{
+    font-family: 'Sacramento', cursive;
+    color: rgb(255, 136, 156);
+    font-size: 4rem
+}
+
+.home h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.home p{
+    color: #666;
+}
+
+.couple h3{
+    font-family: 'Sacramento', cursive;
+    color: rgb(255, 136, 156);
+    font-size: 3.5rem
+
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 75%;
+    }
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 65%;
+    }
+
+    .couple img{
+        width: 100%;
+        height: 120px;
+    }
+}
+@media screen and (max-width:576px) {
+    html{
+        font-size: 60%
+    }
+}
